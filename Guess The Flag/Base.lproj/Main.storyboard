@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +21,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUV-nm-t2a">
                                 <rect key="frame" x="87.5" y="100" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sUV-nm-t2a" secondAttribute="height" multiplier="2:1" id="Ijh-ib-Vct"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6os-MX-Iwz"/>
@@ -27,6 +31,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9X7-PH-wpc">
                                 <rect key="frame" x="87.5" y="230" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9X7-PH-wpc" secondAttribute="height" multiplier="2:1" id="DPm-oS-h4e"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8oK-AL-ozQ"/>
@@ -34,6 +41,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQl-gC-mcV">
                                 <rect key="frame" x="87.5" y="360" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QQl-gC-mcV" secondAttribute="height" multiplier="2:1" id="jkB-Jk-1CF"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lSr-kv-d1I"/>
@@ -47,6 +57,9 @@
                             <constraint firstItem="sUV-nm-t2a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="FXB-gu-jVV"/>
                             <constraint firstItem="sUV-nm-t2a" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JEk-Mn-yyU"/>
                             <constraint firstItem="9X7-PH-wpc" firstAttribute="centerX" secondItem="sUV-nm-t2a" secondAttribute="centerX" id="LK0-mk-UyS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QQl-gC-mcV" secondAttribute="bottom" constant="20" id="dhf-kA-NHx"/>
+                            <constraint firstItem="QQl-gC-mcV" firstAttribute="height" secondItem="9X7-PH-wpc" secondAttribute="height" id="r6P-td-Q0b"/>
+                            <constraint firstItem="9X7-PH-wpc" firstAttribute="height" secondItem="sUV-nm-t2a" secondAttribute="height" id="wRy-9x-cgl"/>
                             <constraint firstItem="QQl-gC-mcV" firstAttribute="top" secondItem="9X7-PH-wpc" secondAttribute="bottom" constant="30" id="xnr-Wk-6Sq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
